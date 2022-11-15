@@ -9,58 +9,59 @@
     <title>Polaris</title>
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/global.css">
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
 
     <!-- JavaScript -->
-    <script src="js/main.js" defer></script>
+    <script src="../js/index.js" defer></script>
   </head>
 
   <body>
 
     <!-- Header -->
-    <header>
-      <nav>
+    <header class="header">
+      <nav class="nav">
 
         <!-- Polaris Star -->
-        <a href="../index.html">
-          <img src="" alt="">
+        <a class="nav__logo" href="../index.html" rel="prev" aria-label="polaris-logo">
+          <!-- TEMPORARY -->
+          <div style="background-color: var(--clr-dark); color: white; width: 8rem; height: 8rem; display: grid; place-items: center; cursor: pointer;">LOGO</div>
         </a>
 
         <!-- Hamburger Button -->
-        <button>
-          <!-- Hamburger Logo -->
-          <img src="" alt="">
+        <button class="dropdown-menu__toggle" data-dropdown="button" aria-label="menu-button">
+          <div class="toggle-hamburger"></div>
         </button>
 
-        <!-- Dropdown Menu -->
-        <ul>
-
-          <!-- Left Navlinks -->
-          <div>
-            <li>
-              <a href="">Equipe</a>
-            </li>
-            <li>
-              <a href="">Trabalhos</a>
-            </li>
-          </div>
-
-          <!-- Right Navlinks -->
-          <div>
-            <li>
-              <a href="">Nossa Produtora</a>
-            </li>
-            <li>
-              <a href="">Contatos</a>
-            </li>
-          </div>
-
-        </ul>
-
       </nav>
+
+      <!-- Dropdown Menu -->
+      <ul class="dropdown-menu" data-dropdown="menu" aria-label="menu">
+
+        <!-- Left Navlinks -->
+        <div class="nav__items">
+          <li>
+            <a class="nav__link" href="team.html" rel="next">Equipe</a>
+          </li>
+          <li>
+            <a class="nav__link" href="work.html" rel="next">Trabalhos</a>
+          </li>
+        </div>
+
+        <!-- Right Navlinks -->
+        <div class="nav__items">
+          <li>
+            <a class="nav__link" href="https://www.nortestudio.com.br/" target="_blank" rel="external">Nossa Produtora</a>
+          </li>
+          <li>
+            <a class="nav__link" href="contact.html" rel="next">Contatos</a>
+          </li>
+        </div>
+
+      </ul>
+
     </header>
 
     <main>
@@ -172,9 +173,9 @@
     </main>
 
     <!-- Footer -->
-    <footer>
-      <p>Uma empresa do Grupo NORTE</p>
-      <p>2022 © Agência Polaris Todos os Direitos Reservados</p>
+    <footer class="footer">
+      <p class="footer__description">Uma empresa do Grupo NORTE</p>
+      <p class="footer_copyright">2022 © Agência Polaris Todos os Direitos Reservados</p>
     </footer>
   </body>
 

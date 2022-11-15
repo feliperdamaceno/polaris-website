@@ -10,6 +10,7 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/home.css">
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
@@ -25,40 +26,38 @@
       <nav class="nav">
 
         <!-- Polaris Star -->
-        <a class="nav__logo" href="">
-          <img src="" alt="">
-
+        <a class="nav__logo" href="index.html" aria-label="polaris-logo">
           <!-- TEMPORARY -->
-          <div style="background-color: var(--clr-dark); color: white; width: 8rem; height: 8rem; display: grid; place-items: center; cursor: pointer;">STAR</div>
+          <div style="background-color: var(--clr-dark); color: white; width: 8rem; height: 8rem; display: grid; place-items: center; cursor: pointer;">LOGO</div>
         </a>
 
         <!-- Hamburger Button -->
-        <button class="dropdown-menu__toggle" data-dropdown="button">
+        <button class="dropdown-menu__toggle" data-dropdown="button" aria-label="menu-button">
           <div class="toggle-hamburger"></div>
         </button>
 
       </nav>
 
       <!-- Dropdown Menu -->
-      <ul class="dropdown-menu" role="list" data-dropdown="menu">
+      <ul class="dropdown-menu" data-dropdown="menu" aria-label="menu">
 
         <!-- Left Navlinks -->
         <div class="nav__items">
           <li>
-            <a class="nav__link" href="pages/team.html">Equipe</a>
+            <a class="nav__link" href="pages/team.html" rel="next">Equipe</a>
           </li>
           <li>
-            <a class="nav__link" href="pages/work.html">Trabalhos</a>
+            <a class="nav__link" href="pages/work.html" rel="next">Trabalhos</a>
           </li>
         </div>
 
         <!-- Right Navlinks -->
         <div class="nav__items">
           <li>
-            <a class="nav__link" href="">Nossa Produtora</a>
+            <a class="nav__link" href="https://www.nortestudio.com.br/" target="_blank" rel="external">Nossa Produtora</a>
           </li>
           <li>
-            <a class="nav__link" href="pages/contact.html">Contatos</a>
+            <a class="nav__link" href="pages/contact.html" rel="next">Contatos</a>
           </li>
         </div>
 
@@ -150,9 +149,9 @@
     </main>
 
     <!-- Footer -->
-    <footer>
-      <p>Uma empresa do Grupo NORTE</p>
-      <p>2022 © Agência Polaris Todos os Direitos Reservados</p>
+    <footer class="footer">
+      <p class="footer__description">Uma empresa do Grupo NORTE</p>
+      <p class="footer_copyright">2022 © Agência Polaris Todos os Direitos Reservados</p>
     </footer>
   </body>
 
