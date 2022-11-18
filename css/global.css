@@ -21,12 +21,13 @@
   --font-size-base: 1.6rem;
 
   --fs-900: calc(var(--font-size-base) * 2 + 2.5vw);
-  --fs-800: calc(var(--font-size-base) * 1.75 + 1.9vw);
-  --fs-700: calc(var(--font-size-base) * 1.5 + 1.6vw);
-  --fs-600: calc(var(--font-size-base) * 1.25 + 1.3vw);
+  --fs-800: calc(var(--font-size-base) * 1.75 + 2vw);
+  --fs-700: calc(var(--font-size-base) * 1.5 + 1.5vw);
+  --fs-600: calc(var(--font-size-base) * 1.25 + 1.25vw);
   --fs-500: calc(var(--font-size-base) * 1.125);
   --fs-400: var(--font-size-base);
   --fs-300: calc(var(--font-size-base) * 0.875);
+  --fs-200: calc(var(--font-size-base) * 0.75);
 
   /* Font Weight */
   --fw-bold: 700;
