@@ -1,13 +1,13 @@
 /* =-=-=-=-=-=-=-=-=-= Import =-=-=-=-=-=-=-=-=-= */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Kalam:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Kalam:wght@400;700&display=swap');
 
 /* =-=-=-=-=-=-=-=-=-= Root =-=-=-=-=-=-=-=-=-= */
 
 :root {
   /* Font Family */
-  --ff-regular: "Poppins", sans-serif;
-  --ff-handwrite: "Kalam", cursive;
+  --ff-regular: 'Poppins', sans-serif;
+  --ff-handwrite: 'Kalam', cursive;
 
   /* Font Sizes */
   /* --fs-900: 9.5rem;
@@ -20,10 +20,10 @@
 
   --font-size-base: 1.6rem;
 
-  --fs-900: calc(var(--font-size-base) * 2 + 2.5vw);
-  --fs-800: calc(var(--font-size-base) * 1.75 + 2vw);
-  --fs-700: calc(var(--font-size-base) * 1.5 + 1.5vw);
-  --fs-600: calc(var(--font-size-base) * 1.25 + 1.25vw);
+  --fs-900: calc(var(--font-size-base) * 1.75 + 2.5vw);
+  --fs-800: calc(var(--font-size-base) * 1.5 + 2vw);
+  --fs-700: calc(var(--font-size-base) * 1.25 + 1.5vw);
+  --fs-600: calc(var(--font-size-base) * 1.125 + 1.25vw);
   --fs-500: calc(var(--font-size-base) * 1.125);
   --fs-400: var(--font-size-base);
   --fs-300: calc(var(--font-size-base) * 0.875);
@@ -79,8 +79,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
+ul[role='list'],
+ol[role='list'] {
   list-style: none;
 }
 
@@ -141,6 +141,18 @@ body {
   font-size: var(--fs-400);
 }
 
+@media (min-width: 600px) {
+  :root {
+    --font-size-base: 1.8rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  :root {
+    --font-size-base: 2rem;
+  }
+}
+
 /* =-=-=-=-=-=-=-=-=-= General Components =-=-=-=-=-=-=-=-=-= */
 
 /* ---------- Header Component ---------- */
@@ -158,7 +170,11 @@ body {
 }
 
 .nav__logo {
-  /* [ TODO ] Add animated logo*/
+  width: 8rem;
+  height: 8rem;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
 }
 
 .dropdown-menu__toggle {
@@ -185,7 +201,7 @@ body {
 .toggle-hamburger::before,
 .toggle-hamburger::after {
   position: absolute;
-  content: "";
+  content: '';
   border-radius: 10rem;
   background-color: white;
   width: 4.5rem;
@@ -236,7 +252,7 @@ body {
 }
 
 .nav__link::after {
-  content: "";
+  content: '';
   height: 0.2rem;
   width: 0%;
   background-color: var(--clr-light);
