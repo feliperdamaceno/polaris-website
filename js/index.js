@@ -46,3 +46,28 @@ function fixDisplayNoneOnDropdownMenu() {
     dropdownMenu.hide();
   }
 }
+
+// =-=-=-=-=-=-=-=-=-= Pages =-=-=-=-=-=-=-=-=-=
+
+/* ---------- Contact ---------- */
+
+const contactForm = $('[data-form="contact"]');
+
+contactForm.on('submit', (event) => {
+  event.preventDefault();
+  handleSubmit();
+});
+
+function handleSubmit() {
+  const formName = $('#formName');
+  const formEmail = $('#formEmail');
+  const formMessage = $('#formMessage');
+  const greetings = $('[data-form="submitted"]');
+  const submitButton = $('[data-form="button"]');
+
+  formName.val('');
+  formEmail.val('');
+  formMessage.val('');
+  greetings.text('Obrigado pela sua mensagem!');
+  submitButton.text('Enviado');
+}

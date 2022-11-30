@@ -10,6 +10,7 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/contact.css">
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
@@ -26,7 +27,7 @@
 
         <!-- Polaris Star -->
         <a class="nav__logo" href="../index.html" aria-label="estrela da polaris">
-          <img src="../img/home/polaris-star.svg" alt="estrela da polaris">
+          <img src="../img/global/polaris-star.svg" alt="estrela da polaris">
         </a>
 
         <!-- Hamburger Button -->
@@ -55,7 +56,7 @@
             <a class="nav__link" href="https://www.nortestudio.com.br/" target="_blank" rel="external">Nossa Produtora</a>
           </li>
           <li>
-            <a class="nav__link" href="contact.html" rel="next">Contatos</a>
+            <a class="nav__link active" href="contact.html" rel="next">Contatos</a>
           </li>
         </div>
 
@@ -65,31 +66,28 @@
 
     <main>
       <!-- Hero Section -->
-      <section>
+      <section class="hero" aria-label="hero">
 
-        <div>
+        <div class="hero__description">
           <h1>Olá!</h1>
-          <h2>Mande sua mensagem.</h2>
+          <h2 data-form="submitted">Mande sua mensagem.</h2>
         </div>
 
-        <div>
-          <!-- Polaris Mascot -->
-          <img src="" alt="">
-        </div>
+        <img class="hero__mascot" src="../img/contact/puff-seated.png" alt="puff sendado com expressao de zangado">
 
       </section>
 
       <!-- Polaris Logo -->
       <div>
-        <img src="" alt="">
+        <img class="polaris-logo" src="../img/global/polaris-logo.png" alt="logo da polaris">
       </div>
 
-      <!-- Form Section -->
-      <section>
+      <!-- Contact Section -->
+      <section class="contact" aria-label="contato">
 
-        <div>
+        <div class="contact__info">
           <h2>Nossa Agência</h2>
-          <ul>
+          <ul class="contact__list">
             <li>Alice Camilo Cassucci, 271</li>
             <li>São José do Rio Pardo São Paulo</li>
             <li>CEP 13720000</li>
@@ -102,23 +100,21 @@
           </ul>
         </div>
 
-        <div>
-          <form>
-            <label for="name">Nome:</label>
-            <input type="text" name="name" id="name">
+        <form class="contact__form" data-form="contact" action="mailto:hello@agenicapolaris.com.br" method="POST" enctype="application/x-www-form-urlencoded">
 
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email">
+          <label for="formName">Nome:</label>
+          <input type="text" id="formName" required>
 
-            <label for="message">Mensagem:</label>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <label for="formEmail">Email:</label>
+          <input type="email" id="formEmail" required>
 
-            <button type="submit">Enviar</button>
-          </form>
-        </div>
+          <label for="formMessage">Mensagem:</label>
+          <textarea id="formMessage" cols="30" rows="5" required></textarea>
 
-        <!-- Polaris Mascot -->
-        <img src="" alt="">
+          <button type="submit" data-form="button">Enviar</button>
+        </form>
+
+        <img class="contact__mascot" src="../img/contact/puff-riding-paul.png" alt="Puff montado no Paul">
       </section>
     </main>
 

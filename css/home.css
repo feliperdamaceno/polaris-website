@@ -1,4 +1,5 @@
 /* ---------- Hero ---------- */
+
 .hero {
   overflow: hidden;
   background-color: var(--clr-blue-light);
@@ -54,12 +55,12 @@
   gap: 1rem;
 }
 
-.hero__logo {
-  max-width: 8rem;
-}
-
 .hero__footer span {
   color: var(--clr-blue-dark);
+}
+
+.hero__footer__logo {
+  max-width: 8rem;
 }
 
 @media (min-width: 600px) {
@@ -74,13 +75,12 @@
     width: 50%;
   }
 
-  .hero__logo {
-    max-width: 12rem;
-    padding-bottom: 1.25rem;
-  }
-
   .hero__footer {
     font-size: var(--fs-300);
+  }
+
+  .hero__footer__logo {
+    max-width: 12rem;
   }
 }
 
@@ -115,13 +115,12 @@
     width: 35%;
   }
 
-  .hero__logo {
-    max-width: 15rem;
-    padding-bottom: 1.5vmax;
-  }
-
   .hero__footer {
     font-size: var(--fs-400);
+  }
+
+  .hero__footer__logo {
+    max-width: 15rem;
   }
 }
 
@@ -163,7 +162,7 @@
     rgb(92, 191, 230) 100%
   );
   border: 0.25rem solid rgb(181, 243, 255);
-  border-radius: 4rem;
+  border-radius: 6rem;
   padding: 2.5rem;
   text-align: center;
   width: 100%;
@@ -225,3 +224,23 @@
 }
 
 /* ---------- Services ---------- */
+
+.customers__footer {
+  text-align: center;
+}
+
+.customers__footer span {
+  font-weight: var(--fw-semibold);
+  position: relative;
+}
+
+.customers__footer span::after {
+  content: '';
+  background-color: var(--clr-blue-dark);
+  bottom: 0;
+  height: 0.225rem;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 105%;
+}

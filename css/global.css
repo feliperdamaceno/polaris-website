@@ -264,6 +264,10 @@ body {
   width: 100%;
 }
 
+.active.nav__link::after {
+  width: 100%;
+}
+
 @media (min-width: 960px) {
   .header {
     background-color: var(--clr-blue-medium);
